@@ -1,0 +1,26 @@
+============================================================
+任务3~4：nn.Module 版 MLP 基线训练（Fashion-MNIST）
+  设置 lr=0.001  hidden=(256,128) batch=128  -> best_test_acc=0.8789  参数量=235,146  用时=155.3s
+已保存: D:\深度学习综合设计\dl_course_design\exp1_mlp\results\exp1_mlp_curves.png
+已保存: D:\深度学习综合设计\dl_course_design\exp1_mlp\results\exp1_mlp_confusion.png
+============================================================
+任务5：超参数对比实验
+(1) 学习率对比：[0.001, 0.01, 0.1, 1.0]
+  设置 lr=0.001  hidden=(256,128) batch=128  -> best_test_acc=0.8686  参数量=235,146  用时=67.3s
+  设置 lr=0.01   hidden=(256,128) batch=128  -> best_test_acc=0.8547  参数量=235,146  用时=68.9s
+  设置 lr=0.1    hidden=(256,128) batch=128  -> best_test_acc=0.3811  参数量=235,146  用时=67.2s
+  设置 lr=1.0    hidden=(256,128) batch=128  -> best_test_acc=0.1000  参数量=235,146  用时=69.6s
+已保存: D:\深度学习综合设计\dl_course_design\exp1_mlp\results\exp1_table_lr.png
+(2) 隐藏单元数对比：[64, 256, 1024]
+  设置 lr=0.001  hidden=(64,32) batch=128  -> best_test_acc=0.8515  参数量=52,650  用时=64.2s
+  设置 lr=0.001  hidden=(256,128) batch=128  -> best_test_acc=0.8686  参数量=235,146  用时=70.4s
+  设置 lr=0.001  hidden=(1024,512) batch=128  -> best_test_acc=0.8702  参数量=1,333,770  用时=125.0s
+已保存: D:\深度学习综合设计\dl_course_design\exp1_mlp\results\exp1_table_hidden.png
+(3) 批量大小对比：[32, 128, 512]
+  设置 lr=0.001  hidden=(256,128) batch=32   -> best_test_acc=0.8674  参数量=235,146  用时=130.7s
+  设置 lr=0.001  hidden=(256,128) batch=128  -> best_test_acc=0.8686  参数量=235,146  用时=102.1s
+  设置 lr=0.001  hidden=(256,128) batch=512  -> best_test_acc=0.8526  参数量=235,146  用时=90.6s
+已保存: D:\深度学习综合设计\dl_course_design\exp1_mlp\results\exp1_table_batch.png
+============================================================
+全部结果已保存到: D:\深度学习综合设计\dl_course_design\exp1_mlp\results
+请将表格与曲线截图插入报告第四章。
